@@ -1,0 +1,73 @@
+:root{
+    --background:rgb(248, 189, 192);
+}
+.center{
+    width: 100%;
+    height: 100vh;
+    background-color:var(--background); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.527) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+.inp-box{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    & input{
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(233, 235, 236);
+    }   
+
+    & button{
+        padding: 10px 30px;
+        border: 2px solid var(--background); 
+        border-radius: 20px;
+        &:hover{
+            background-color: var(--background);
+            transition: all 0.5s ease;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+}
+.list{
+    list-style: none;
+    background-color: rgb(235, 236, 237);
+    margin: auto;
+    width: 90%;
+    /* padding: 20px; */
+    border-radius: 10px;
+}
+.item{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    overflow-x:auto ;
+}
+.rmBtn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--background);
+    border: none;
+    &:hover{
+        background-color: rgb(235, 236, 237);
+        border: 2px solid var(--background);
+    }
+}
+

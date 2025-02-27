@@ -1,0 +1,68 @@
+:root{
+    --primary-gray1:rgb(236, 237, 239);
+    --primary-gray2:rgb(212, 211, 211);
+    --btn:coral;
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    background:rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+.calc{
+    display: grid;
+    grid-template-columns: repeat(4,90px);
+    grid-template-rows: repeat(6,80px);
+    background-color: var(--primary-gray1);
+    justify-items: center;
+    align-items: center;
+}
+.inp{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/5;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    /* align-self: end;
+    justify-self: end; */
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 20px;
+    text-align: end;
+}
+.calc :not(.inp){
+    border: 1px solid var(--primary-gray2);
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    &:hover{
+        background-color: var(--primary-gray2);
+        transition: all 0.5s ease;
+    }
+}
+.calc :nth-child(21){
+    background-color: var(--btn);
+    color: white;
+    font-weight: 400;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+    
+}
+.calc .back{
+    background-color: var(--primary-gray2);
+    & svg{
+        width: 50%;
+    }
+}   
